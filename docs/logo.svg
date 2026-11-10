@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <style>svg{color:#111}@media (prefers-color-scheme:dark){svg{color:#f2f2f2}}</style>
+  <polygon points="7,13 17,5 17,47 51,47 59,57 7,57" fill="currentColor"/>
+  <circle cx="41" cy="24" r="10" fill="currentColor"/>
+</svg>
