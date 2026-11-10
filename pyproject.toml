@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatsthepoint"
+version = "0.3.0"
+description = "Survey data handling, analysis and figures for social scientists."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Alexander Wilson" }]
+dependencies = [
+    "numpy",
+    "pandas>=2.0",
+    "matplotlib>=3.10",
+    "seaborn",
+    "scipy",
+    "statsmodels",
+    "scikit-learn",
+    "plotly",
+]
+
+[project.optional-dependencies]
+text = ["wordcloud", "nltk"]
+network = ["networkx"]
+labels = ["adjustText"]
+excel = ["openpyxl"]
+panel = ["linearmodels"]
+ml = ["shap"]
+stats = ["pingouin"]
+all = [
+    "wordcloud",
+    "nltk",
+    "networkx",
+    "adjustText",
+    "openpyxl",
+    "linearmodels",
+    "shap",
+    "pingouin",
+]
+
+[project.urls]
+Homepage = "https://github.com/AlexanderTheAlright/whatsthepoint"
+
+[tool.setuptools.packages.find]
+include = ["whatsthepoint*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
